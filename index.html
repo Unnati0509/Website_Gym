@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness and Wellness
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<section id="intro">
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="gym_icon.png">
+<p>
+    Matrix Gym
+</p>
+        </div>
+        <div class="navigation">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#bmicalculator">Fitness Calculator</a></li>
+                    <li><a href="#location">Address</a></li>
+               
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <a href="#lightbox1">  <button class="btn">
+         Call us 
+            </button></a>
+         <div id="lightbox1">
+        <a href="#">X</a>
+        <p>975169535</p>
+        </div>
+
+        <a href="#lightbox2"> 
+             <button class="btn">
+             Email Now
+            </button>
+        </a>
+
+             <div id="lightbox2">
+                <a href="#">X</a>
+                <p>unnatisaxena0305@gmail.com</p>
+            </div> 
+                
+        </div>
+    </header>
+    <section id="info">
+        <div class="info-class">
+            <h1 id="div-heading">
+                Join the best gym in Bareilly Now!
+            </h1>
+        <form id="joining">
+
+        <div class="form">
+        <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        <div class="form">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <div>
+            <input type="submit" value="Submit" id="Submitbtn">
+        </div>
+    
+            </form>
+
+        </div>
+
+        </div>
+
+
+    </section>
+    </section>
+
+    <section id="about-us">
+        <h1 class="aboutus">About Us</h1>
+        <div class="aboutsection">
+            <div id="aboutinfo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deleniti optio, minus voluptatibus nesciunt ducimus, quo doloremque, architecto modi totam recusandae. Asperiores voluptas delectus officiis dolores quod, alias iste pariatur totam. A aut dolore maxime exercitationem, minima repellat maiores ea facere consequuntur pariatur ullam dolorum eum reiciendis nam sint impedit architecto autem, velit id eaque enim nisi quam voluptas doloribus. Dicta illo libero sapiente laudantium?
+            </div>
+            <div id="abimg">
+                
+            </div>
+        </div>
+        </section>
+    <section id=bmicalculator>
+        <div id="bmicalc">
+            <h1>BMI Calculator</h1>
+            <p class="text">Height</p>
+            <input type="text" id="height">
+            <p class="text">Weight</p>
+            <input type="text" id="weight">
+            <p id="result"></p>
+            <button id="calculatorbtn" onclick="bmi()">Calculate</button>
+            <p id="info">Please enter height in [cm] and weight in [kg]</p>
+            <p id="observation">A healthy BMI lies between 18.5-24.9
+            </p>
+        </div>
+
+    </section>
+
+    
+    <section id="location">
+        <div id="location-heading">
+        <span><h1 id="locality">Locate Us here:</h1></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14043.04633989286!2d79.41512916977537!3d28.366056800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a007939f826245%3A0x19d56d99c88c469c!2sMatrix%20gym!5e0!3m2!1sen!2sin!4v1638605509736!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </section>
+    
+    <!-- <footer>
+        <div class="center">
+            Copyright &copy; www.matrixgymbly.com . All rights reserved!
+        </div>
+    </footer> -->
+
+
+    <script>
+        function bmi(){
+            var h=document.getElementById('height').value;
+            var w=document.getElementById('weight').value;
+            var bmi= w/(h/100 * h/100);
+            var total=bmi.toFixed(2);
+            document.getElementById('result').innerHTML = "Your BMI is " + total;
+        }
+    </script>
+</body>
+</html>
